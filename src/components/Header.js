@@ -34,7 +34,7 @@ export default function Header() {
               optio vel necessitatibus delectus?
             </p>
             
-            <a href="#" className="btn btn-outline"> Read More</a>
+            <a href="#home" className="btn btn-outline"> Read More</a>
             
           </div>
 
