@@ -1,6 +1,7 @@
 import React from 'react'
 import profile from '../images/profile.jpg'
 
+
 export default function Header() {
   return (
     <>
@@ -19,7 +20,7 @@ export default function Header() {
         </div>
       </div>
 
-      <section>
+      <section className="home">
         <div className="container grid">
           <div className="text-intro">
             <h1>
@@ -32,11 +33,17 @@ export default function Header() {
               non. Mollitia veritatis aliquid ipsa excepturi dolorum sit nemo
               optio vel necessitatibus delectus?
             </p>
+            
+            <a href="#" className="btn btn-outline"> Read More</a>
+            
           </div>
 
           <img src={profile} alt="Ben profile" />
+          
         </div>
       </section>
     </>
   )
 }
+
+

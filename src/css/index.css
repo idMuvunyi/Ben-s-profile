@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --primary-color: #1f3157;
+  --primary-color: #384b74;
+  --home-color:#5f6a83;
 }
 
 body {
@@ -61,4 +62,48 @@ img {
 }
 .navbar .flex {
   justify-content: space-between;
+}
+
+.home{
+  height: 450px;
+  position: relative;
+  background-color: var(--home-color);
+}
+
+.home img{
+width:85%
+}
+
+.home p{
+margin: 50px 0;
+}
+
+.home .grid{
+  grid-template-columns: 60% 40%;
+  gap: 50px;
+  overflow:visible;
+}
+
+.home::before,
+.home::after{
+  content:'';
+  position:absolute;
+  height: 70px;
+  bottom: -50px;
+  right:0;
+  left: 0;
+  background: var(--home-color);
+  transform: skewY(-1deg);
+  -webkit-transform: skewY(-1deg);
+  -moz-transform: skewY(-1deg);
+  -ms-transform: skewY(-1deg);
+}
+
+.middle{
+  margin: 50px 0;
+}
+.middle h2{
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
 }
