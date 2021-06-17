@@ -67,6 +67,7 @@ img {
 .home{
   height: 450px;
   position: relative;
+  color:#fff;
   background-color: var(--home-color);
 }
 
@@ -102,8 +103,15 @@ margin: 50px 0;
 .middle{
   margin: 50px 0;
 }
-.middle h2{
+.middle h2,
+.expertise h2{
   text-align: center;
   padding: 20px 0;
   font-weight: bold;
 }
+
+.expertise .card:hover{
+  border-top: 4px solid var(--primary-color);
+}
+
+
